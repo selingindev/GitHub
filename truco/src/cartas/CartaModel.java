@@ -2,21 +2,21 @@ package cartas;
 
 public class CartaModel {
 
-    private EnumNumero numero;   
+    private EnumNumero nome;   
     private int peso;
     private EnumNipe nipe;
 
-    public CartaModel(EnumNumero numero, int peso, EnumNipe nipe) {
-        this.numero = numero;
+    public CartaModel(EnumNumero nome, int peso, EnumNipe nipe) {
+        this.nome = nome;
         this.peso = peso;
         this.nipe = nipe;
     }
 
     public EnumNumero getNumero() {
-        return numero;
+        return nome;
     }
-    public void setNumero(EnumNumero numero) {
-        this.numero = numero;
+    public void setNumero(EnumNumero nome) {
+        this.nome = nome;
     }
     public int getPeso() {
         return peso;
