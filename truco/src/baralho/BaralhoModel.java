@@ -25,8 +25,8 @@ public class BaralhoModel {
         return vira;
     }
 
-    public void setVira(CartaModel vira) {
-        this.vira = vira;
+    public void setVira(CartaModel viraCard) {
+        this.vira = viraCard;
     }
    
 
