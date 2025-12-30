@@ -4,12 +4,12 @@ public class CartaModel {
 
     private EnumNumero nome;   
     private int peso;
-    private EnumNipe nipe;
+    private EnumNaipe naipe;
 
-    public CartaModel(EnumNumero nome, int peso, EnumNipe nipe) {
+    public CartaModel(EnumNumero nome, int peso, EnumNaipe naipe) {
         this.nome = nome;
         this.peso = peso;
-        this.nipe = nipe;
+        this.naipe = naipe;
     }
 
     public EnumNumero getNumero() {
@@ -24,10 +24,10 @@ public class CartaModel {
     public void setPeso(int peso) {
         this.peso = peso;
     }
-    public EnumNipe getNipe() {
-        return nipe;
+    public EnumNaipe getNaipe() {
+        return naipe;
     }
-    public void setNipe(EnumNipe nipe) {
-        this.nipe = nipe;
+    public void setNaipe(EnumNaipe naipe) {
+        this.naipe = naipe;
     }
 }
