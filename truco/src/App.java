@@ -18,7 +18,15 @@ public class App {
         jogadores.add(jogador2);
     
         baralhoController.buildCartas();
-        baralhoController.destribuirCartas()jogadores;
+        baralhoController.destribuirCartas(jogadores);
 
+        for (JogadorModel jogador : jogadores) {
+            System.out.println("Mão do " + jogador.getNome() + ":");
+            for (var carta : jogador.getMao()) {
+                System.out.println("- " + carta.getNumero() + " de " + carta.getNaipe());
+            }
+        }
+        System.out.println(baralhoController.getVira().getNumero() + " de " + baralhoController.getVira().getNaipe() + " é a carta virada."); 
+        
     }
 }
