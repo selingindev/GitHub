@@ -23,5 +23,8 @@ public class JogadorModel {
     public CartaModel[] getMao() {
         return mao;
     }
+    public void setMao(CartaModel[] mao) {
+        this.mao = mao;
+    }
 
 }
