@@ -2,12 +2,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 import baralho.BaralhoController;
-import baralho.BaralhoModel;
+
 import jogador.JogadorModel;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        BaralhoModel baralhoModel = new BaralhoModel();
         BaralhoController baralhoController = new BaralhoController();
         List<JogadorModel> jogadores = new ArrayList<>();
 
@@ -27,6 +26,9 @@ public class App {
             }
         }
         System.out.println(baralhoController.getVira().getNumero() + " de " + baralhoController.getVira().getNaipe() + " é a carta virada."); 
+
+        jogador1.jogarCarta(jogador1.getMao()[0]);
+        jogador2.jogarCarta(jogador2.getMao().get(0));
         
     }
 }
