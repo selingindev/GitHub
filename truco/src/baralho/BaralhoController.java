@@ -97,9 +97,9 @@ public class BaralhoController {
             if (numeroJogadores % 2 == 2 && i == 2) virarCarta();
             if (numeroJogadores % 2 == 0 && i == 1)  virarCarta();          
             JogadorModel jogador = jogadores.get(i);
-            CartaModel[] mao = new CartaModel[3];
+            List<CartaModel> mao = new ArrayList<>();
             for (int j = 0; j < 3; j++) {
-                mao[j] = darCarta();
+                mao.add(darCarta());
             }
             jogador.setMao(mao);
         }

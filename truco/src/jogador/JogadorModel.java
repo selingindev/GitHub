@@ -1,13 +1,16 @@
 package jogador;
 
+import java.util.List;
+
 import cartas.CartaModel;
 
 public class JogadorModel {
 
     private String nome;
-    private CartaModel[] mao =  new CartaModel[3];
+    private List<CartaModel> mao;
+    public boolean isYourTurn = false;
 
-    public JogadorModel(String nome, CartaModel[] mao) {
+    public JogadorModel(String nome, List<CartaModel> mao) {
         this.nome = nome;   
         this.mao = mao;
     }
@@ -20,11 +23,14 @@ public class JogadorModel {
         this.nome = nome;
     }
 
-    public CartaModel[] getMao() {
+    public List<CartaModel> getMao() {
         return mao;
     }
-    public void setMao(CartaModel[] mao) {
+    public void setMao(List<CartaModel> mao) {
         this.mao = mao;
     }
 
+    public void setTurn(boolean turn){
+        this.isYourTurn = turn;
+    }
 }
